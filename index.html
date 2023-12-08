@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <!--Link do CSS-->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Meu portfolio com uma breve apresentação sobre mim e meus projetos feitos">
-    <link rel="shortcut icon" href="imagens/logo.jpeg" type="image/x-icon">k
     <title>Mateus Pereira | Portfolio</title>
-
+<link rel="shortcut icon" href="imagens/logo.jpeg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -26,11 +25,19 @@
             </div>
             <nav>
                 <ul class="links">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Sobre mim</a></li>
-                    <li><a href="">Projetos</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>                
+                    <li><a href="">Inicio</a>
+                        <hr>
+                    </li>
+                    <li><a href="#sb">Sobre mim</a>
+                        <hr>
+                    </li>
+                    <li><a href="#pj">Projetos</a>
+                        <hr>
+                    </li>
+                    <li><a href="#ct">Contato</a>
+                        <hr>
+                    </li>
+                </ul>
             </nav>
         </section>
     </header>
@@ -39,16 +46,18 @@
     </section>
 
     <!--Começo do sobre mim-->
-    <section class="sobre-mim">
+    <section id="sb" class="sobre-mim">
         <h1>SOBRE MIM</h1>
         <div class="texto-perfil">
             <div class="texto">
-                <p>All the Lorem Ipsum generators on the Internet generate Lorem Ipsum which looks reasonable. The
-                    generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+                <p>All the Lorem Ipsum generators on the Internet
+                    generate Lorem Ipsum which looks reasonable. The
+                    generated Lorem Ipsum is therefore always free
+                    from repetition, injected humour, or
                     non-characteristic</p>
             </div>
 
-            <img src="imagens/perfil.png" alt="Minha imagem">
+            <img src="imagens/minha foto.jpg" alt="Minha imagem">
 
         </div>
     </section>
@@ -57,25 +66,133 @@
     <section class="skills">
         <div class="hard-skills">
             <h1 class="hard">Hard</h1>
-            <h1 class="skills">SKILLS</h1>
+            <h1 class="skills-1">SKILLS</h1>
         </div>
 
         <div class="icons">
-            <div class="icon-1">
-                <img src="" alt="Figma">
-                <img src="" alt="HTML">
-                <img src="" alt="Github">
+
+            <div>
+                <div class="icon-1">
+                    <img src="imagens/figma.png" alt="Figma">
+                    <img src="imagens/html.png" alt="HTML">
+                    <img src="imagens/github.png" alt="Github">
+                </div>
+                <div class="icon-2">
+                    <img src="imagens/js.svg" alt="Javascript">
+                    <img src="imagens/css.png" alt="CSS">
+                </div>
             </div>
-            <div class="icon-2">
-                <img src="" alt="Javascript">
-                <img src="" alt="CSS">
-            </div>
+
         </div>
     </section>
     <!--Fim Do hard skills-->
 
+    <!--Começo do código referente a parte dos projetos-->
+    <section id="pj" class="projetos">
+        <div class="projetos-titulo">
+            <hr>
+            <h1>PROJETOS</h1>
+            <hr>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <nav class="project" id="carr">
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+
+        </nav>
+
+        <nav class="navegador">
+
+            <img src="imagens/arrow.png" id="mais" alt="Avançar">
+            <!--
+            <input type="radio" name="cordenada" id="">
+            <input type="radio" name="cordenada" id="">
+            <input type="radio" name="cordenada" id="">
+            <input type="radio" name="cordenada" id="">
+            <input type="radio" name="cordenada" id="">
+        -->
+
+            <img src="imagens/arrow.png" id="menos" alt="Retornar">
+
+        </nav>
+
+        <div class="mais-projetos">
+            <a href="">Mais Projetos</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+    <!--Fim do código dos projetos-->
+
+    <!--Começo do código do contato-->
+    <section id="ct" class="contato-p">
+        <nav class="contato-redes">
+            <div class="contato">
+                <h1>CONTATO</h1>
+            </div>
+            <nav class="redes">
+                <ul>
+                    <li><a target="_blank" href="https://contate.me/mateuspereira"><img src="imagens/whatsaap.png" alt="Whatsapp"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/mateus_pereira_1837/"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                    <li><a target="_blank" href="https://github.com/mateuscromado?tab=overview&from=2023-12-01&to=2023-12-08"><img style="filter:invert(1000);" src="imagens/github.png" alt="Github"></a></li>
+                    <li><a  href=""><img style="filter:invert(1000);" src="imagens/61109.png" alt="Linkedin"></a></li>
+
+                </ul>
+            </nav>
+        </nav>
+
+        <nav class="dados">
+            <div class="input">
+                <input type="text" placeholder="Nome" name="" id="aa">
+                <br>
+                <input type="email" placeholder="Email" name="" id="aa">
+                <br>
+                <textarea class="textarea" name="" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <br>
+                <input type="button" value="ENVIAR">
+            </div>
+        </nav>
+
+    </section>
+    <!--Fim do código do cantato-->
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

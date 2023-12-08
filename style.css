@@ -1,16 +1,19 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-    *{
+    * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
-    img{
+
+    img {
         max-width: 100%;
     }
+
     body {
-   
+        overflow-x: hidden;
         font-family: 'Roboto', sans-serif;
     }
 
@@ -22,7 +25,7 @@
     }
 
     .header img {
-       max-width: 100px;
+        max-width: 100px;
     }
 
     .links {
@@ -30,14 +33,28 @@
         gap: 40px;
     }
 
-    .links li{
+    .links li {
         list-style: none;
     }
 
     .links a {
         text-decoration: none;
         color: #F9F9F9;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+
+
+
+    }
+
+    .links hr {
+        width: 0;
+        transition: 0.3s;
+        margin: 0 auto;
+
+    }
+
+    .links li:hover hr {
+        width: 100%;
 
     }
 
@@ -74,9 +91,11 @@
     }
 
     .texto-perfil img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         border-radius: 10px;
+
+        border: solid black 2px;
 
     }
 
@@ -102,4 +121,251 @@
 
     /*Começo do Hard Skills*/
 
+    .skills {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 140px;
+    }
+
+
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .icons img {
+        max-width: 110px;
+    }
+
+    .icon-1,
+    .icon-2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .hard-skills h1 {
+        font-size: 12.5rem;
+        user-select: none;
+    }
+
+    .hard {
+        font-weight: 700;
+        margin-bottom: -60px;
+    }
+
+    .skills-1 {
+        font-weight: 100;
+        font-family: Montserrat;
+
+    }
+
+
+
+
     /*Fim do Hard Skills*/
+
+    /*Começo dos projetos*/
+    .projetos {
+        background-color: #141414;
+        color: #F9F9F9;
+
+    }
+
+    .projetos-titulo {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        text-align: center;
+        font-size: 4rem;
+
+        width: 500px;
+
+        margin: 0 auto;
+
+
+    }
+
+    .projetos-titulo hr {
+        width: 200px;
+        height: 20px;
+        background-color: #4A7D9E;
+
+        border: none;
+        border-radius: 10px;
+    }
+
+    .projetos-titulo hr:nth-child(1) {
+        float: right;
+    }
+
+
+
+    .project {
+        display: flex;
+        background-color: #141414;
+
+        transition: 1s;
+    }
+
+    .projeto {
+        background-color: #d9d9d9;
+        max-width: 400px;
+        color: #141414;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 80px;
+        padding-bottom: 50px;
+
+    }
+
+    .projeto img {
+        max-width: 400px;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .projeto h1 {
+        font-size: 3rem;
+    }
+
+    .projeto p {
+        font-size: 1.5rem;
+    }
+
+
+    .navegador {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .navegador img {
+        width: 50px;
+        filter: invert(10);
+        transition: 0.3s;
+        cursor: pointer;
+        margin: 20px;
+
+
+    }
+
+    .navegador img:hover {
+        scale: 1.2;
+
+    }
+
+    .navegador img[id="mais"] {
+        transform: rotate(180deg);
+    }
+
+    .navegador input {
+        margin: 5px;
+    }
+
+    .mais-projetos {
+        width: 100%;
+        background-color: #000000;
+
+    }
+
+    .mais-projetos a {
+        text-decoration: none;
+        color: #565454;
+        font-size: 2em;
+        text-align: right;
+        float: right;
+        transition: 1s;
+        margin: 0 40px;
+        padding: 10px;
+        border-radius: 15px;
+
+
+    }
+
+    .mais-projetos a:hover {
+        background-color: #A7A5A5;
+        color: #141414;
+    }
+
+    /*Fim dos projetos*/
+
+    /*Começo do contato*/
+    .contato-p {
+        background: linear-gradient(45deg, #fff 40%, #141414 40%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 200px;
+
+        gap: 200px;
+    }
+
+    .redes ul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+
+        list-style: none;
+    }
+
+   
+
+    .redes img {
+        max-width: 70px;
+    }
+
+    .contato h1 {
+        font-size: 8rem;
+
+
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #FFF;
+        margin-top: -150px;
+    }
+
+    .input {
+        display: block;
+        max-width: 300px;
+    }
+
+    .input input[id="aa"] {
+        margin-bottom: 20px;
+        width: 400px;
+        border-radius: 8px;
+        height: 50px;
+
+    }
+
+    .input input[id="aa"],
+    .textarea::placeholder {
+        font-size: 1.2rem;
+        padding: 10px;
+        font-weight: 200;
+    }
+
+    .input input:last-of-type {
+        background-color: #141414;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+        color: #FFF;
+
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .textarea {
+        width: 400px !important;
+        height: 350px !important;
+        border-radius: 15px;
+
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+
+
+    /*Fim do contato*/
