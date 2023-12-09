@@ -397,7 +397,7 @@
     }
 
     .textarea {
-        width: 600px !important;
+        width: 400px !important;
         height: 350px !important;
         border-radius: 15px;
 
@@ -405,19 +405,52 @@
         font-size: 1.2rem;
     }
 
-    @media (max-width:1024px) {
+    .contato-p > div{
+        display: flex;
+        align-items: center;
 
+    }
+
+    @media
+    /* (min-width:850px) and */
+    (max-width:1024px) {
+.contato-redes{
+    margin-top: 300px;
+    margin-right: 20px;
+}
+        /*Header*/
+        .links li a {
+            font-size: 2.3rem;
+        }
+
+        .links {
+            gap: 35px;
+        }
+
+        /*Sobre mim*/
+
+        .texto {
+            padding: 10px;
+        }
+
+        /*Projetos*/
+        .navegador img {
+            width: 100px;
+        }
+
+        .navegador {
+            gap: 100px;
+        }
+
+        /*Skills*/
         .hard,
         .skills-1 {
             font-size: 8rem !important;
         }
 
+        /*Contato*/
         .contato-p {
-            gap: 3px;
-        }
-
-        .contato h1 {
-            font-size: 5rem;
+            gap: 40px;
         }
 
         .redes ul li img {
@@ -425,281 +458,101 @@
         }
 
         .redes ul {
-            gap: 30px;
-        }
-
-    }
-
-    @media (max-width:850px) {
-
-        .contato-p {
-            display: block;
+            gap: 20px;
+            float: right;
         }
 
         .contato h1 {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            -webkit-text-stroke-width: 0;
-            color: #FFF;
-            font-size: 6rem;
+            font-size: 4.5rem;
+            text-align: right;
         }
 
-        .contato {
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .redes ul {
-            gap: 80px;
-
-        }
-
-        .redes img {
-            filter: invert(100);
-            margin: 100px auto;
-
-        }
-
-        .input input[id="aa"],
-        .textarea::placeholder {
-            font-size: 2rem;
-        }
-
-        .input {
-            width: 600px;
-            margin-left: -120px !important;
-        }
-
-        .input input[id="aa"] {
-            margin-bottom: 20px;
-            width: 600px;
-            height: 80px !important;
-            border-radius: 8px;
-            height: 50px;
-
-        }
-
-        .dados {
-            display: flex;
-            justify-self: center;
-        }
-
-        .input input:last-of-type {
-            width: 600px;
-            height: 100px;
-            font-size: 3rem;
-            margin-top: 100px;
+        .textarea {
+            width: 400px !important;
         }
 
 
-        .navegador img:first-of-type {
-            margin-right: 300px;
-
-        }
-
-        .navegador img {
-            width: 150px;
-        }
-
-        .mais-projetos {
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            background-color: #141414;
-            font-size: 2rem;
-            margin: 50px auto;
-        }
     }
 
-    @media (max-width:622px) {
-        .links a {
-            font-size: 1.3rem;
+    @media (max-width:793px) {
+
+
+        .contato-redes{
+            margin-top: 300px;
+            margin-right: 20px;
         }
-
-        .links {
-            gap: 20px;
-        }
-
-        .links hr {
-            display: none;
-        }
-
-        .image-h img {
-            width: 50px;
-            margin: 0;
-            padding: 0;
-        }
-    }
-
-
-    @media (max-width:470px) {
-        .links a {
-            font-size: 0.8rem;
-        }
-
-        .links {
-            gap: 10px;
-        }
-
-        .links hr {
-            display: none;
-        }
-
-        .image-h img {
-            width: 50px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .sobre-mim h1 {
-            padding-top: 50px;
-            font-size: 4rem;
-            text-align: center;
-        }
-
-        .texto {
-
-            margin: 0 auto;
-            padding: 5px;
-            width: 80vw;
-
-        }
-
-        .texto p {
-            font-size: 15px;
-            word-spacing: 2px;
-        }
-
-        .texto-perfil img {
-            width: 60vw;
-            height: 60vw;
-            margin-left: 60px !important;
-        }
-
-
-
-        .sobre-mim {
-            margin: 0;
-            padding: 0;
-        }
-
-        .hard,
-        .skills-1 {
-            font-size: 4rem !important;
-            margin-bottom: 5px;
-        }
-
-        .icons img {
-            width: 70px;
-        }
-
-        /*Projetos*/
-        .projetos-titulo {
-            margin: 0;
-            padding: 20px auto;
-            width: 200px;
-            margin: 0 auto;
-        }
-
-        .projetos-titulo hr {
-            width: 50px;
-            height: 10px;
-        }
-
-        .projetos-titulo h1 {
-            font-size: 2.5rem;
-
-
-        }
-
-        /*Janelas do projeto*/
-        .projeto {
-            width: 280px;
-            height: 300px;
-            margin: 0 auto;
-            margin: auto 20px;
-
-        }
-
-        .projeto img {
-            width: 280px;
-            height: 150px;
-        }
-
-        .projeto h1 {
+        /*Header*/
+        .links li a {
             font-size: 2rem;
-        }
-
-        .projeto p {
-            font-size: 1rem;
-        }
-
-        .navegador img{
-            width: 100px;
-            height: 100px;
-            margin: -100px;
-            padding: 0;
-
-            margin-top: 60px;
-            margin-bottom: 40px;
-
-            margin: 50px -200px;
-
-            
-        }
-
-        .mais-projetos a{
-            font-size: 2rem;
-        }
-
-        .mais-projetos{
-                        margin-bottom: -300px;
-
         }
 
         /*Contato*/
-        .contato h1{
-            font-size: 3.5rem;
-            margin: 0;
-            padding: 0;
 
-            margin-right: 90px;
+        .textarea,
+        input[id="aa"] {
+            width: 330px !important;
         }
-
-        .redes{
-            margin-left: -90px;
-            margin-top: -50px;
-        }
-        .redes ul{
-            gap: 20px;
-        }
-
-        .redes ul li a img{
-            width: 50px;
-            
-        }
-
-        /*Dados*/
-        .input input, .input textarea{
-            width: 250px !important;
-
-            margin: 0 auto;
-            margin-left: -50px;
-        }
-
-        .input input:focus, .input textarea:focus{
-            outline: none;
-        }
-
-        input[value="ENVIAR"]{
-        }
-
     }
 
+    @media (max-width:700px) {
 
-    /*Skills*/
+        .contato-p {
+            display: flex;
+            justify-content: center;
+padding-top: 0;
+            border: red solid 3px;
+            width: 100vw;
+        }
 
-    /*Fim do contato*/
+        .contato-p > div{
+            display: block;
+        }
+
+        .redes ul {
+            float: none;
+        }
+
+        .redes ul li img {
+            filter: invert(100);
+
+            margin: 50px auto;
+        }
+
+        .redes {
+            width: 300px;
+
+        }
+        .contato{
+            width: 300px;
+        }
+        .contato h1 {
+            color: #fff;
+            -webkit-text-stroke-width: 0;
+            font-size: 4rem;
+            margin-right: 40px;
+        }
+
+        .links li a{
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width:380px) {
+        .textarea,
+        input[id="aa"] {
+            width: 250px !important;
+
+        }
+
+        .redes ul li img{
+            width: 30px;
+        }
+
+       .contato h1{
+        font-size: 3rem;
+       }
+
+       .contato-redes{
+        margin-left: -40px;
+       }
+    }
