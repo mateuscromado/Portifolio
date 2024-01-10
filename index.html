@@ -1,199 +1,88 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <!--Link do CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/LOGO Mateus.png"  type="image/x-icon">
+
+    <title>Mateus Pereira | portifólio</title>
+    <meta name="description"
+        content="Olá sou Mateus e este é o meu portifólio onde demonstro minhas habilidades e projetos anteriores">
+    <meta name="keywords"
+        content="mateus,pereira,portifolio,html,css,js,pernambuco,mateuspereira,igarassu,cruz de rebouças">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meu portfolio com uma breve apresentação sobre mim e meus projetos feitos">
-    <title>Mateus Pereira | Portfolio</title>
-<link rel="shortcut icon" href="imagens/logo.jpeg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+
 </head>
 
 <body>
-    <!--Começo do cabeçalho-->
+
     <header>
-        <section class="header">
-            <div class="image-h">
-                <img src="imagens/logo.jpeg" alt="Minha logo">
-            </div>
-            <nav>
-                <ul class="links">
-                    <li><a href="">Inicio</a>
-                        <hr>
-                    </li>
-                    <li><a href="#sb">Sobre mim</a>
-                        <hr>
-                    </li>
-                    <li><a href="#pj">Projetos</a>
-                        <hr>
-                    </li>
-                    <li><a href="#ct">Contato</a>
-                        <hr>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="logo-header">
+            <img src="imagens/LOGO Mateus.png" alt="logo mateus">
+        </div>
+
+        <ul class="nav-header">
+            <li><a href="">Inicio</a>
+                <div class="barra-header"></div>
+            </li>
+
+            <li> <a href="">Sobre mim</a>
+
+                <div class="barra-header"></div>
+            </li>
+
+            <li> <a href="">Projetos</a>
+                <div class="barra-header"></div>
+            </li>
+
+            <li> <a href="">contato</a>
+                <div class="barra-header"></div>
+            </li>
+        </ul>
     </header>
-    <!--Fim do cabeçalho-->
-    <section class="banner">
-    </section>
 
-    <!--Começo do sobre mim-->
-    <section id="sb" class="sobre-mim">
-        <h1>SOBRE MIM</h1>
-        <div class="texto-perfil">
-            <div class="texto">
-                <p>All the Lorem Ipsum generators on the Internet
-                    generate Lorem Ipsum which looks reasonable. The
-                    generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or
-                    non-characteristic</p>
-            </div>
 
-            <img src="imagens/minha foto.jpg" alt="Minha imagem">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
 
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/LOGO Mateus.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/LOGO Mateus.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/LOGO Mateus.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-    </section>
-    <!--Fim do sobre mim-->
-    <!--Começo do Hard skills-->
-    <section class="skills">
-        <div class="hard-skills">
-            <h1 class="hard">Hard</h1>
-            <h1 class="skills-1">SKILLS</h1>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-        <div class="icons">
-
-            <div>
-                <div class="icon-1">
-                    <img src="imagens/figma.png" alt="Figma">
-                    <img src="imagens/html.png" alt="HTML">
-                    <img src="imagens/github.png" alt="Github">
-                </div>
-                <div class="icon-2">
-                    <img src="imagens/js.svg" alt="Javascript">
-                    <img src="imagens/css.png" alt="CSS">
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--Fim Do hard skills-->
-
-    <!--Começo do código referente a parte dos projetos-->
-    <section id="pj" class="projetos">
-        <div class="projetos-titulo">
-            <hr>
-            <h1>PROJETOS</h1>
-            <hr>
-        </div>
-
-        <nav class="project" id="carr">
-            <div class="projeto">
-                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
-                <h1>Projeto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
-            </div>
-
-            <div class="projeto">
-                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
-                <h1>Projeto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
-            </div>
-
-            <div class="projeto">
-                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
-                <h1>Projeto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
-            </div>
-
-            <div class="projeto">
-                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
-                <h1>Projeto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
-            </div>
-
-            <div class="projeto">
-                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
-                <h1>Projeto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
-            </div>
-
-
-        </nav>
-
-        <nav class="navegador">
-
-            <img src="imagens/arrow.png" id="mais" alt="Avançar">
-            <!--
-            <input type="radio" name="cordenada" id="">
-            <input type="radio" name="cordenada" id="">
-            <input type="radio" name="cordenada" id="">
-            <input type="radio" name="cordenada" id="">
-            <input type="radio" name="cordenada" id="">
-        -->
-
-            <img src="imagens/arrow.png" id="menos" alt="Retornar">
-
-        </nav>
-
-        <div class="mais-projetos">
-            <a href="">Mais Projetos</a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-    </section>
-    <!--Fim do código dos projetos-->
-
-    <!--Começo do código do contato-->
-    <section id="ct" class="contato-p">
-        <div>
-        <nav class="contato-redes">
-            <div class="contato">
-                <h1>CONTATO</h1>
-            </div>
-            <nav class="redes">
-                <ul>
-                    <li><a target="_blank" href="https://contate.me/mateuspereira"><img src="imagens/whatsaap.png" alt="Whatsapp"></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/mateus_pereira_1837/"><img src="imagens/instagram.png" alt="Instagram"></a></li>
-                    <li><a target="_blank" href="https://github.com/mateuscromado?tab=overview&from=2023-12-01&to=2023-12-08"><img  src="imagens/github.png" alt="Github"></a></li>
-                    <li><a  href=""><img  src="imagens/61109.png" alt="Linkedin"></a></li>
-
-                </ul>
-            </nav>
-        </nav>
-
-        <nav class="dados">
-            
-            <div class="input">
-                <input type="text" placeholder="Nome" name="" id="aa">
-                <br>
-                <input type="email" placeholder="Email" name="" id="aa">
-                <br>
-                <textarea class="textarea" name="" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
-                
-                
-                <input type="button" value="ENVIAR">
-            </div>
-        </nav>
-    </div>
-    </section>
-    <!--Fim do código do cantato-->
-
-
-
-
-
-    <script src="script.js"></script>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    
+<script>
+    ride="true"
+</script>
 </html>
